@@ -5,13 +5,16 @@ public class TestCircleClass {
         Circle c3 = new Circle(3.6);
 
         c1.setRadius(5);
-        System.out.println("C1 r = " + c1.getRadius() + " Area = " + c1.getArea() + " P = " + c1.getPerimeter());
-
         c2.setRadius(5);
-        System.out.println("C2 r = " + c2.getRadius() + " Area = " + c2.getArea());
 
-        System.out.println("C3 r = " + c3.getRadius() + " Area = " + c3.getArea());
+        printCircle(c1);
+        printCircle(c2);
+        printCircle(c3);
 
         System.out.println("Number Of Circle = " + Circle.getNumberOfObject());
+    }
+
+    public static void printCircle(Circle c) {
+        System.out.println("C1 r = " + c.getRadius() + " Area = " + c.getArea() + " P = " + c.getPerimeter());
     }
 }
