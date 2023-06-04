@@ -60,6 +60,8 @@ public class SampleXML2 {
                     // System.out.println("%%FTP-LP2 : "+ value_FTPLP2);
                     // System.out.println("==================================");
 
+                    // ksksksksksk
+
                     System.out.print(id+",");
                     System.out.print(value_FTPRP1+",");
                     System.out.print(value_FTPLP2);
