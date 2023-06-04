@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle extends GeometricObject {
     private double radius;
     private static int numberOfObject;
 
@@ -10,6 +10,13 @@ public class Circle {
     public Circle(double newRadius) {
         radius = newRadius;
         numberOfObject++;
+    }
+
+    public Circle(double newRadius, String color, boolean filled) {
+        radius = newRadius;
+        numberOfObject++;
+        setColor(color);
+        setFilled(filled);
     }
 
     public double getRadius() {
@@ -30,5 +37,13 @@ public class Circle {
 
     public double getPerimeter() {
         return 2 * radius * Math.PI;
+    }
+
+    public void printCircle() {
+        System.out.print("The Circle is created " + getDateCreated() + " and the radius is " + radius);
+    }
+
+    public String toString(){
+        return super.toString() + " Radius = " + radius;
     }
 }

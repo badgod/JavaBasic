@@ -1,6 +1,5 @@
-public class Rectangle {
+public class Rectangle extends GeometricObject {
     private double width;
-
     private double height;
 
     Rectangle() {
@@ -9,6 +8,12 @@ public class Rectangle {
     }
 
     Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public Rectangle(double width, double height, String color, boolean filled) {
+        super(color, filled);
         this.width = width;
         this.height = height;
     }
